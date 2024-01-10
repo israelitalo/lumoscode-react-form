@@ -6,7 +6,7 @@ import IMask from 'imask';
 import { AiFillEye as OpenEyeIcon, AiFillEyeInvisible as ClosedEyeIcon } from 'react-icons/ai'
 import { colors } from '../../theme/colors';
 
-interface InputTextProps extends Omit<TextFieldProps, 'label' | 'value' | 'onChange'> {
+export interface InputTextProps extends Omit<TextFieldProps, 'label' | 'value' | 'onChange'> {
   /**
    * Valor exibido no label do input.
    */
@@ -24,7 +24,7 @@ interface InputTextProps extends Omit<TextFieldProps, 'label' | 'value' | 'onCha
    */
   value: string | undefined;
   /**
-   * Função callback que retorna o valor digitado no input, no formato float
+   * Função callback que retorna o valor digitado no input
    */
   onChange: (_value: string | undefined) => void;
   /**
